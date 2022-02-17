@@ -1,5 +1,4 @@
-// 1st- Button
-
+// Calculation part
 
 function allIntegerValue() {
     const incomeValue = document.getElementById('totalIncome').value;
@@ -23,7 +22,7 @@ document.getElementById("totalCalculate").addEventListener("click", function () 
     allIntegerValue();
 });
 
-// 2nd- Button 
+// Savings part
 document.getElementById('saveButton').addEventListener('click', function () {
     const incomeValue = document.getElementById('totalIncome').value;
     const incomeValueInteger = parseInt(incomeValue);
