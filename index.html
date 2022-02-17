@@ -19,38 +19,40 @@
     <h1 style="text-align: center;">Money Saving</h1>
     <section>
         <!-- image and calculation part -->
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col">
-                    <img src="images/saving-money.jpg" alt="" width="700" height="500">
+                    <img src="images/saving.png" alt="" width="450" height="450" style="margin-top: 150px;">
                 </div>
-                <div class="col mb-5" style="background-color:#D1D1D1; border-radius: 10px;">
-                    <h5 style="margin-left: 100px ;">Income</h5>
-                    <form>
-                        <label class="font-style">Income: <input id="totalIncome" type="text"
-                                placeholder="Input Your Salary">
-                        </label>
-                    </form>
-                    <h5 style="margin-left: 100px ;">Expences</h5>
-                    <form>
-                        <label class="font-style ms-3">Food: <input id="foodCost" type="text"
-                                placeholder="Input Food Cost">
-                        </label>
-                        <label class="font-style ms-3">Rent: <input id="rentCost" type="text"
-                                placeholder="Input Rent Cost">
-                        </label>
-                        <label class="font-style">Clothes: <input id="clothCost" type="text"
-                                placeholder="Input Clothes Cost">
-                        </label>
-                    </form>
-                    <button id="totalCalculate" style="margin-left: 80px;" type="submit"
-                        class="btn btn-primary mt-3 ps-4 pe-4 fw-bolder">Calculate</button>
+                <div class="col mb-5">
+                    <div style="margin-left: 140px;">
+                        <h5 style="margin-left: 100px ;">Income</h5>
+                        <form>
+                            <label class="font-style">Income: <input id="totalIncome" type="text"
+                                    placeholder="Input Your Salary">
+                            </label>
+                        </form>
+                        <h5 style="margin-left: 100px ;">Expences</h5>
+                        <form>
+                            <label class="font-style ms-3">Food: <input id="foodCost" type="text"
+                                    placeholder="Input Food Cost">
+                            </label> <br>
+                            <label class="font-style ms-3">Rent: <input id="rentCost" type="text"
+                                    placeholder="Input Rent Cost">
+                            </label> <br>
+                            <label class="font-style">Clothes: <input id="clothCost" type="text"
+                                    placeholder="Input Clothes Cost">
+                            </label>
+                        </form>
+                        <button id="totalCalculate" style="margin-left: 80px;" type="submit"
+                            class="btn btn-primary mt-3 ps-4 pe-4 fw-bolder">Calculate</button>
+                    </div>
                     <h5 style="text-align: center;"> Total Expenses: <span id="totalExpense">0</span> <span
                             class="text-muted">
                             Taka</span> </h5>
                     <h5 style="text-align: center;"> Balance: <span id="totalBalance">0</span> <span class="text-muted">
                             Taka</span> </h5>
-                    <form>
+                    <form style="margin-left: 100px;">
                         <label class="font-style">Save: <input id="percentInput" type="text" size="10">
                         </label>
                         <label class="font-style ms-3">%<button id="saveButton" type="button"
