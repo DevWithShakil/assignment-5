@@ -37,6 +37,7 @@
                             <label class="font-style ms-3">Food: <input id="foodCost" type="text"
                                     placeholder="Input Food Cost">
                             </label> <br>
+                            <span id="error"></span>
                             <label class="font-style ms-3">Rent: <input id="rentCost" type="text"
                                     placeholder="Input Rent Cost">
                             </label> <br>
@@ -44,7 +45,7 @@
                                     placeholder="Input Clothes Cost">
                             </label>
                         </form>
-                        <button id="totalCalculate" style="margin-left: 80px;" type="submit"
+                        <button id="totalCalculate" style="margin-left: 80px;" type="submit" onclick="errorMessage()"
                             class="btn btn-primary mt-3 ps-4 pe-4 fw-bolder">Calculate</button>
                     </div>
                     <h5 style="text-align: center;"> Total Expenses: <span id="totalExpense">0</span> <span
@@ -54,8 +55,9 @@
                             Taka</span> </h5>
                     <form style="margin-left: 100px;">
                         <label class="font-style">Save: <input id="percentInput" type="text" size="10">
+                            <p id="p01"></p>
                         </label>
-                        <label class="font-style ms-3">%<button id="saveButton" type="button"
+                        <label class="font-style ms-3">%<button id="saveButton" type="button" onclick="emptyError()"
                                 class="btn btn-primary ps-5 pe-5 ms-3 fw-bolder">Save</button>
                         </label>
                     </form>

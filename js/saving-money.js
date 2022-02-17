@@ -36,3 +36,30 @@ document.getElementById('saveButton').addEventListener('click', function () {
     remainingBalanceTotal.innerText = allIntegerValue() - finalPercent;
 
 })
+
+// error message in foodCost box
+
+function errorMessage() {
+    var error = document.getElementById("error")
+    if (isNaN(document.getElementById("foodCost").value)) {
+
+        // Changing HTML to draw attention
+        error.innerHTML = "<span style='color: red;'>" +
+            "Please enter a valid number </span>"
+    } else {
+        error.innerHTML = ""
+    }
+}
+
+// error message in clotheCost for input field is empty
+function emptyError() {
+    const message = document.getElementById("p01");
+    message.innerHTML = "";
+    let x = document.getElementById("percentInput").value;
+    try { 
+      if(x == "")  throw "<span style='color: red;'>" + " Input is empty </span>" 
+    }
+    catch(err) {
+      message.innerHTML = "" + err;
+    }
+  }
